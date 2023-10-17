@@ -1,9 +1,10 @@
-// TODO: Add your own header
+// Fidelis Okorie
+// fokorie@csu.fullerton.edu
+// @Maxawesome101
+// Partners: @Ryankossick
 
-// Don't forget to #include the header file associated with
-// this source file.
 #include "rectarea_functions.h"
-
+// using namespace std;
 // Prompt for an integer input and return the integer value
 //
 // The function takes one argument which is the prompt printed
@@ -16,17 +17,11 @@
 //   int height{PromptForInt("How tall are you? ")};
 //   n_fingers = PromptForInt("How many fingers do you have? ");
 int PromptForInt(const std::string& query) {
-  // TODO: Write the body of this function such that it
-  // 1. Print the prompt to the terminal
-  // 2. Declares an integer typed variable named user_input and
-  //    initialize it to 0
-  // 3. Read the value typed at the keyboard and store it in the
-  //    variable named user_input
-  // 4. Return user_input to the function's caller
+  std::cout << query;
+  int user_input{0};
+  std::cin >> user_input;
 
-  // TODO: Remove the return below and replace it with your own
-  // return statement given the instructions above.
-  return -1;
+  return user_input;
 }
 
 // Calculate the area of a triangle defined by length and width.
@@ -49,16 +44,10 @@ int PromptForInt(const std::string& query) {
 // \param width the width the rectangle
 // \returns the area of the rectangle defined by \p length and \p width
 int RectangleArea(int length, int width) {
-  // TODO: Write this function such that it
-  // 1. Declares an integer variable named area and initializes it
-  //    to zero.
-  // 2. Check if length is greater than zero and width is greater than
-  //    zero.
-  //    if true, then calculate the area given the length and width
-  //                  and assign it to the variable area.
-  // 3. Return area to the function's caller
+  int area{0};
+  if (length > 0 && width > 0) {
+    area = length * width;
+  }
 
-  // TODO: Remove the return below and replace it with your own
-  // return statement given the instructions above.
-  return -1;
+  return area;
 }
